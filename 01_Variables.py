@@ -19,7 +19,7 @@ print(type(my_int_to_str_variable))
 my_bool_variable = True
 print(my_bool_variable)
 
-print('Hello', ',','world')
+print('Hello', ',','world') #Imprimir diferentes argumentos.
 
 # Concatenacion de variables en un print
 print(my_string_variable,my_int_variable,my_bool_variable)
