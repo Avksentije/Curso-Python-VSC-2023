@@ -71,3 +71,7 @@ for element in list(person_info.values()): #al diccionario lo debemos transforma
     print(element) 
 
 
+for element in person_info: # en un diccionario, imprime solo los campos que integran al diccionario
+    print(element)
+else: 
+    print("El bucle ha finalizado")
