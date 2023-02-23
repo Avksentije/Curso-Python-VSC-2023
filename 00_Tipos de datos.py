@@ -42,9 +42,6 @@ my_float = 2.8 * 2
 print("Hola " * int(my_float))
 
 
-
-
-
 #Aplicaciones en bioinformática DNA, usando variable tipo str.
 b = "Hello, World!"
 print(b)
@@ -69,6 +66,15 @@ print(m.replace("H", "J"))  #método replace
 print(m.split(",")) #se puede "afinar" un split desde strip :))
 x = m.strip()
 z = print(x.split(","))
+
+
+#Desempaquetado de caracteres
+
+language = "Python"
+a, b, c, d, e, f = language
+print(a)
+print(b)
+print(c)
 
 
 

@@ -7,6 +7,7 @@
 
 my_string_variable = "Mi primer variable"
 print(my_string_variable)
+print(len(my_string_variable))
 
 my_int_variable = 123
 print(my_int_variable)
@@ -49,16 +50,23 @@ print(tania[1])
 print(tania[2])
 
 nuevos_valores = ("misticismo", "arte digital")
-tania_dos = tania.extend(nuevos_valores)
+tania_dos = tania.extend(nuevos_valores) #método agregar elementos
 print(nuevos_valores)
 print(tania)
+print(len(tania))
+print(type(tania))
+
+print(tania.pop(3)) #eliminamos cualquier elemento de la lista usando pop
+print(tania)
+
 
 #b) Tupla: A tuple is a collection which is ordered and unchangeable.
 amurita = ("filosofia", "musica", "pensamiento")
 print(amurita[0])
 print(amurita[1])
 print(amurita[2])
-
+print(len(amurita))
+print(type(amurita))
 
 #c) Sets: A set is a collection which is unordered, unchangeable*, and unindexed.
 # *Aunque no se puede cambiar un valor, si pueden eliminarse o añadir nuevos valores.
@@ -69,8 +77,8 @@ print(playlist_album)
 playlist_album.add("Grita")
 print(playlist_album)
 
-
-
+print(len(playlist_album))
+print(type(playlist_album))
 
 #d) Diccionario: Dictionaries are used to store data values in key:value pairs.
 # A dictionary is a collection which is ordered*, changeable and do not allow duplicates.
@@ -83,13 +91,24 @@ person_info = {
    'age':35,
    'is_married': False
    }
-print(len(person_info))
-print(person_info.get("country"))
+print(len(person_info)) #se obtiene el número de elementos del diccionario.
+print(person_info.get("country")) #método get, directamente. 
 
-y = person_info["city"]
+y = person_info["city"] #Definir una variable.
 print(y)
 
-x = person_info.get("city")
+x = person_info.get("city") #Consultar obteniendo un dato. 
 print(x)
 
+
+my_new_line_string = "Este es un String\ncon salto de línea"
+print(my_new_line_string)
+
+
+#Formateo
+
+name, surname, age = "Tania", "Rodríguez", 33
+
+print("Mi nombre es {} {} y mi edad es {}".format(name, surname, age)) #Este es el formato a elegir :) imprime el objeto
+print("Mi nombre es %s %s y mi edad es %d" %(name, surname, age)) #Usamos % cuando el caracter ya se encuentra formateado
 
