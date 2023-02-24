@@ -111,4 +111,4 @@ name, surname, age = "Tania", "Rodríguez", 33
 
 print("Mi nombre es {} {} y mi edad es {}".format(name, surname, age)) #Este es el formato a elegir :) imprime el objeto
 print("Mi nombre es %s %s y mi edad es %d" %(name, surname, age)) #Usamos % cuando el caracter ya se encuentra formateado
-
+print("Mi nombre es {name} {surname} y mi edad es %d" %(name, surname, age)) 
