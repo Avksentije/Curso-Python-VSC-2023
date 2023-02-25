@@ -17,6 +17,18 @@ class Person_dos: #definición de objetos
     def __init__(self, name, surname):
         self.full_name = f"{name} {surname}"
 
+    def walk(self):
+        print(f"{self.full_name} e stá caminando")
+
 my_person = Person_dos("Tania", "RC")
 print(my_person.full_name)
+my_person.walk()
+
+
+
+
+
+
+
+
 
