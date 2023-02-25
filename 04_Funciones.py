@@ -37,10 +37,16 @@ def print_name_with_default(name, surname, alias = "Sin alias"):
     print(f"{name} {surname} {alias}")
 print_name_with_default("Tania", "RC", "Amurita")
 
-def print_infinite_texts(*text): #usando * puedo generar infinito
+def print_infinite_texts(*text): #usando * puedo generar infinito, parámetros separados por coma
     print(text)
 print_infinite_texts("Hola", "textos", "infinitos", "puedo", "agregar", "los que quiera")
 print_infinite_texts("o poquitos") #estas opciones nos funcionan para los "For" que están ligados a una BD
 
 
+def my_function(food):
+  for x in food:
+    print(x)
 
+fruits = ["apple", "banana", "cherry"]
+
+my_function(fruits)
